@@ -14,6 +14,10 @@ class Contact extends Component {
       var message = this.props.data.contactmessage;
     }
 
+
+// window.open('mailto:test@example.com?subject=subject&body=body');
+
+
     return (
       <section id="contact">
 
