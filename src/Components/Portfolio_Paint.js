@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import IconButton from '@material-ui/core/IconButton'; 
 import Gallery from "react-photo-gallery";
-// var PATH = '../Cota_images/image0.jpeg'
-// import image0 from '../Cota_images/image0.jpeg'
-// import image0 from 'images/image0.jpeg'
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";

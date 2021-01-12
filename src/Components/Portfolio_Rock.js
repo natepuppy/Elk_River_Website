@@ -48,7 +48,7 @@ class Portfolio_Rock extends Component {
 
       if (this.state.width < 858) {
         return (
-          <section className="root" id="portfolio" style={{backgroundColor: "#FFFFFF"}}>
+          <section className="root" id="portfolio2" style={{backgroundColor: "#FFFFFF"}}>
             <h2 style={{color: "#000524"}}>Professional Rock Work</h2>
             <Gallery photos={this.props.data.rock_photos.slice(0, 4)} />
             <Link to="/rockgallery"> 
@@ -61,7 +61,7 @@ class Portfolio_Rock extends Component {
       }
         
       return (
-        <section className="root" id="portfolio" style={{backgroundColor: "#FFFFFF"}}>
+        <section className="root" id="portfolio2" style={{backgroundColor: "#FFFFFF"}}>
           <h2 style={{color: "#000524"}}>Professional Rock Work</h2>
           <Gallery photos={this.props.data.rock_photos.slice(0, 6)} />
           <Link to="/rockgallery"> 

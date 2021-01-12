@@ -1,3 +1,9 @@
+.react-photo-gallery--gallery > div {
+   align-items: flex-start; 
+} 
+
+/* center | flex-end | etc... */
+
 .background-image {
    /* background-image: url(https://www.livinspaces.net/wp-content/uploads/2019/09/House-Desai-25_Metropole-Architects.jpg); */
    background-image: url(../images/image28.jpg);
@@ -11,18 +17,18 @@
 
 }
 
-.portfolio {
+/* .portfolio2 {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
    overflow: hidden;
-}
+} */
 
 
-.gridList {
+/* .gridList {
    width: 500;
    height: 450;
-}
+} */
 
 
 
@@ -34,6 +40,9 @@
    margin: 0px;
    padding: 0px;
  }
+
+
+ /* 
 .gridList2 {
    width: 500;
    height: 450;
@@ -41,9 +50,6 @@
    margin: 0px;
    padding: 0px;
  }
-/* .titleBar {
-   background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%);
- } */
 .icon {
    color: white;
  }
@@ -51,8 +57,8 @@
 .tile {
    margin: 0px;
    padding: 0px;
-}
-
+} */
+/* 
 /* .image {
    object-fit: cover;
    width: 100%;
