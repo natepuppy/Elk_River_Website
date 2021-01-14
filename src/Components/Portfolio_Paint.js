@@ -35,11 +35,11 @@ class Portfolio_Paint extends Component {
       if (this.state.width < 858) {
         return (
           <section className="root" id="portfolio">
-            <h2>Professional Interior Painting</h2>
+            <h2>Elegant Interior Painting</h2>
             <Gallery photos={this.props.data.painting_photos.slice(0, 4)} />
             <Link to="/paintgallery"> 
-            <div id="contactForm">
-              <button className="submit" style={{backgroundColor: 'rgba(52, 52, 52, 0.0)', color: '#fe6928'}}>See More <FontAwesomeIcon icon={faArrowRight} /></button> 
+            <div>
+              <button style={{backgroundColor: 'rgba(52, 52, 52, 0.0)', color: '#fe6928', margin: "0px"}}>See More <FontAwesomeIcon icon={faArrowRight} /></button> 
             </div>
           </Link>
           </section>
@@ -48,11 +48,11 @@ class Portfolio_Paint extends Component {
         
       return (
         <section className="root" id="portfolio">
-          <h2>Professional Interior Painting</h2>
+          <h2>Elegant Interior Painting</h2>
           <Gallery photos={this.props.data.painting_photos.slice(0, 7)} />
           <Link to="/paintgallery"> 
-            <div id="contactForm">
-              <button className="submit" style={{backgroundColor: 'rgba(52, 52, 52, 0.0)', color: '#fe6928'}}>See More <FontAwesomeIcon icon={faArrowRight} /></button> 
+            <div>
+              <button style={{backgroundColor: 'rgba(52, 52, 52, 0.0)', color: '#fe6928', margin: "0px"}}>See More <FontAwesomeIcon icon={faArrowRight} /></button> 
             </div>
           </Link>
         </section>

@@ -1,7 +1,174 @@
+// import React, { Component } from 'react'
+// import * as emailjs from 'emailjs-com'
+// import { Button, FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
+// class Contact extends Component {
+//   state = {
+//     name: '',
+//     email: '',
+//     subject: '',
+//     message: '',
+//   }
+// handleSubmit(e) {
+//     e.preventDefault()
+//     const { name, email, subject, message } = this.state
+//     let templateParams = {
+//       contactEmail: email,
+//       contactName: name,
+//       // subject: subject,
+//       contactMessage: message,
+//      }
+//     emailjs.sendForm('service_e9fmwnw', 'template_i5no7ce', e.target, 'user_BRBjncruaT2ojSGs9jueQ')
+//       .then((result) => {
+//           console.log(result.text);
+//       }, (error) => {
+//           console.log(error.text);
+//       });
+//      this.resetForm()
+//  }
+// resetForm() {
+//     this.setState({
+//       name: '',
+//       email: '',
+//       subject: '',
+//       message: '',
+//     })
+//   }
+// handleChange = (param, e) => {
+//     this.setState({ [param]: e.target.value })
+//   }
+// render() {
+//     return (
+//       <section id="contact">
+//           <h1 className="p-heading1">Get in Touch</h1>
+//           <Form onSubmit={this.handleSubmit.bind(this)}>
+//             <FormGroup controlId="formBasicEmail">
+//               <Label className="text-muted">Email address</Label>
+//               <Input
+//                 type="email"
+//                 name="email"
+//                 value={this.state.email}
+//                 className="text-primary"
+//                 onChange={this.handleChange.bind(this, 'email')}
+//                 placeholder="Enter email"
+//               />
+//             </FormGroup>
+// <FormGroup controlId="formBasicName">
+//               <Label className="text-muted">Name</Label>
+//               <Input
+//                 type="text"
+//                 name="name"
+//                 value={this.state.name}
+//                 className="text-primary"
+//                 onChange={this.handleChange.bind(this, 'name')}
+//                 placeholder="Name"
+//               />
+//             </FormGroup>
+// <FormGroup controlId="formBasicSubject">
+//               <Label className="text-muted">Subject</Label>
+//               <Input
+//                 type="text"
+//                 name="subject"
+//                 className="text-primary"
+//                 value={this.state.subject}
+//                 onChange={this.handleChange.bind(this, 'subject')}
+//                 placeholder="Subject"
+//               />
+//             </FormGroup>
+// <FormGroup controlId="formBasicMessage">
+//               <Label className="text-muted">Message</Label>
+//               <Input
+//                 type="textarea"
+//                 name="message"
+//                 className="text-primary"
+//                 value={this.state.message}
+//                 onChange={this.handleChange.bind(this, 'message')}
+//               />
+//             </FormGroup>
+// <Button variant="primary" type="submit">
+//               Submit
+//             </Button>
+//           </Form>
+//       </section>
+//     )
+//   }
+// }
+// export default Contact
+
+
+
+
+
+
+
+
+
+// emailjs.send("service_e9fmwnw","template_i5no7ce",{
+//    name: "Nathan Clark",
+//    email: "nathanmclark23@gmail.com",
+//    message: "I would like to inquire about paint",
+//    reply_to: "natedog23@cox.net",
+//    });
+
+
+
+
+
+
 import React, { Component } from 'react';
+import emailjs from 'emailjs-com';
+import { Button, FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
+
 
 class Contact extends Component {
+   
+
+   state = {
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+   //  sent: false,
+  }
+handleSubmit(e) {
+    e.preventDefault()
+    const { name, email, subject, message } = this.state
+    let templateParams = {
+      contactEmail: email,
+      contactName: name,
+      // subject: subject,
+      contactMessage: message,
+     }
+    emailjs.sendForm('service_e9fmwnw', 'template_i5no7ce', e.target, 'user_BRBjncruaT2ojSGs9jueQ')
+      .then((result) => {
+          console.log(result.text);
+         //  this.state.sent = true;
+          
+      }, (error) => {
+          console.log(error.text);
+      });
+     this.resetForm()
+ }
+resetForm() {
+    this.setState({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    })
+  }
+handleChange = (param, e) => {
+    this.setState({ [param]: e.target.value })
+  }
+
   render() {
+     
+
+
+
+
+
+
+
 
     if(this.props.data){
       var name = this.props.data.name;
@@ -16,6 +183,7 @@ class Contact extends Component {
 
 
 // window.open('mailto:test@example.com?subject=subject&body=body');
+// onSubmit={sendEmail}
 
 
     return (
@@ -40,7 +208,7 @@ class Contact extends Component {
          <div className="row">
             <div className="eight columns">
 
-               <form action="" method="post" id="contactForm" name="contactForm">
+               {/* <form onSubmit={sendEmail} action="" method="post" id="contactForm" name="contactForm" >  
 					<fieldset>
 
                   <div>
@@ -51,11 +219,6 @@ class Contact extends Component {
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
 						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
                   </div>
 
                   <div>
@@ -70,28 +233,98 @@ class Contact extends Component {
                      </span>
                   </div>
 					</fieldset>
-				   </form>
+				   </form> */}
 
-           <div id="message-warning"> Error boy</div>
-				   <div id="message-success">
+
+
+
+          <Form onSubmit={this.handleSubmit.bind(this)}>
+            <FormGroup controlId="formBasicEmail">
+              <Label className="text-muted">Email address</Label>
+              <Input
+                type="email"
+                name="email"
+                value={this.state.email}
+                className="text-primary"
+                onChange={this.handleChange.bind(this, 'email')}
+                placeholder="Enter email"
+              />
+            </FormGroup>
+            <FormGroup controlId="formBasicName">
+              <Label className="text-muted">Name</Label>
+              <Input
+                type="text"
+                name="name"
+                value={this.state.name}
+                className="text-primary"
+                onChange={this.handleChange.bind(this, 'name')}
+                placeholder="Name"
+              />
+            </FormGroup>
+            {/* <FormGroup controlId="formBasicSubject">
+              <Label className="text-muted">Subject</Label>
+              <Input
+                type="text"
+                name="subject"
+                className="text-primary"
+                value={this.state.subject}
+                onChange={this.handleChange.bind(this, 'subject')}
+                placeholder="Subject"
+              />
+            </FormGroup> */}
+            <FormGroup controlId="formBasicMessage">
+              <Label className="text-muted">Message</Label>
+              <Input
+                type="textarea"
+                name="message"
+                className="text-primary"
+                value={this.state.message}
+                onChange={this.handleChange.bind(this, 'message')}
+              />
+            </FormGroup>
+            <Button variant="primary" type="submit" className="submit">
+              Submit
+            </Button>
+          </Form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+                  
+
+               <div id="message-warning"> Error boy</div>
+               
+               {/* style={{display: "block"}} */}
+               <div id="message-success">
                   <i className="fa fa-check"></i>Your message was sent, thank you!<br />
-				   </div>
+               </div>
+				   
            </div>
 
 
             <aside className="four columns footer-widgets">
                <div className="widget widget_contact">
 
-					   <h4>Address and Phone</h4>
+					   <h4>Phone</h4>
 					   <p className="address">
 						   {name}<br />
-						   {street} <br />
-						   {city}, {state} {zip}<br />
+						   {/* {street} <br />
+						   {city}, {state} {zip}<br /> */}
 						   <span>{phone}</span>
 					   </p>
 				   </div>
 
-               <div className="widget widget_tweets">
+               {/* <div className="widget widget_tweets">
                   <h4 className="widget-title">Latest Tweets</h4>
                   <ul id="twitter">
                      <li>
@@ -111,7 +344,7 @@ class Contact extends Component {
                         <b><a href="#">3 Days Ago</a></b>
                      </li>
                   </ul>
-		         </div>
+		         </div> */}
             </aside>
       </div>
    </section>

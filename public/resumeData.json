@@ -3,10 +3,10 @@
     "name":"Elk River Paint and Landscape",
     "description":"Nothing but the Best",
     "image":"https://www.themarque.global/photos-cache/profile-images/79198079-5e25eb4eb0f409/advanced_search_profile.png",
-    "bio":"Our Cota® team members are skilled professionals who take great pride in their work. Our team will arrive on time, keep you informed, deliver what we promise and guarantee our work. We’ll also get to know what’s important to you so that we can customize the way we work with your daily routine.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "nathanmclark23@gmail.com",
-    "phone": "555-555-5555",
+    "bio":"Our Elk River® team members are skilled professionals who take great pride in their work. We will arrive on time, keep you informed, deliver what we promise and guarantee our work. We’ll also get to know what’s important to you so that we can customize the way we work with your daily routine.",
+    "contactmessage":"Please contact us if you have questions, would like a quote, or anything else. We will respond to you as soon as possible.",
+    "email": "julian.cota71@gmail.com",
+    "phone": "(208) 996-7169",
     "github":"https://github.com/nordicgiant2/react-nice-resume",
     "project":"https://github.com/nordicgiant2/react-nice-resume",
     "address":{
@@ -49,22 +49,22 @@
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":"Unbeatable Price",
+        "school":"Unbeatable Quality",
         "degree":"Masters in Beer tasting",
         "graduated":"April 2007",
-        "description":"We give you a price that nobody can beat. Period. We often can beat the prices of any other painter due to our low cost efficiently run business."
+        "description":"We give you quality work that nobody can beat. Period."
       },
       {
         "school":"Unbeatable Service",
         "degree":"Masters in Beer tasting",
         "graduated":"April 2007",
-        "description":"Our unparalleled attention to detail and our professionalism make us a cut above the rest. We are not an ordinary paint company – we are your locally owned and operated superior paint service that provides world-class painters, national partnerships with leading brands, and, ultimately, your dream home. We work with you to ensure that every detail fulfills your vision and offer a limited 2-year warranty that will protect you against product or workmanship defects."
+        "description":"Our unparalleled attention to detail and our professionalism make us a cut above the rest. We are not an ordinary company. We are your locally owned and operated service that provides world-class painting and landscaping. We work with you to ensure that every detail fulfills your vision. We will help you build your dream home."
       },
       {
         "school":"Outstanding Professionalism",
         "degree":"What did you study 101",
         "graduated":"March 2003",
-        "description":"Let our trusted St. George painting contractors revitalize the space where you live, love, work, and play. For more than two decades we've brought new life and vigor to thousands of homes with our comprehensive residential painting services. Cota has over 20 years of painting experience, and all of our St. George painters are skilled and vetted to the highest standards of professionalism and integrity."
+        "description":"Let our trusted St. George painters revitalize the space where you live, love, work, and play. We've brought new life and vigor to many homes with our comprehensive residential painting services. Elk River has many years of painting experience, and all of our St. George painters are skilled and vetted to the highest standards of professionalism and integrity."
       }
     ],
     "work":[
@@ -72,7 +72,7 @@
         "company":"We are here to serve you",
         "title":"Senior UX God ",
         "years":"March 2010 - Present",
-        "description":"While the present seems uncertain, the future ahead is bright. If you've been putting off house painting because you haven't been able to find the time, there's nothing stopping you now. Painter1 is still fully operational and our professional house painters are committed to delivering the fresh, clean exterior you are looking for."
+        "description":"While the present seems uncertain, the future ahead is bright. If you've been putting off house painting because you haven't been able to find the time, there's nothing stopping you now. Elk River is still fully operational and our professional house painters are committed to delivering the fresh, clean exterior you are looking for."
       }
     ],
     "skills":[
@@ -263,7 +263,7 @@
       },
       {
         "src": "images/image10.jpeg",
-        "width": 4,
+        "width": 6,
         "height": 2
       },
       {

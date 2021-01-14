@@ -48,12 +48,12 @@ class Portfolio_Rock extends Component {
 
       if (this.state.width < 858) {
         return (
-          <section className="root" id="portfolio2" style={{backgroundColor: "#FFFFFF"}}>
-            <h2 style={{color: "#000524"}}>Professional Rock Work</h2>
+          <section className="root" id="portfolio2" style={{backgroundColor: "#000524"}}>
+            <h2 style={{color: "#FFFFFF", paddingTop: "10px"}}>The Perfect Poolside Rock Design</h2>
             <Gallery photos={this.props.data.rock_photos.slice(0, 4)} />
             <Link to="/rockgallery"> 
-            <div id="contactForm">
-              <button className="submit" style={{backgroundColor: 'rgba(52, 52, 52, 0.0)', color: '#fe6928'}}>See More <FontAwesomeIcon icon={faArrowRight} /></button> 
+              <div>
+              <button style={{backgroundColor: 'rgba(52, 52, 52, 0.0)', color: '#fe6928', margin: "0px"}}>See More <FontAwesomeIcon icon={faArrowRight} /></button> 
             </div>
           </Link>
           </section>
@@ -61,12 +61,12 @@ class Portfolio_Rock extends Component {
       }
         
       return (
-        <section className="root" id="portfolio2" style={{backgroundColor: "#FFFFFF"}}>
-          <h2 style={{color: "#000524"}}>Professional Rock Work</h2>
+        <section className="root" id="portfolio2" style={{backgroundColor: "#000524"}}>
+          <h2 style={{color: "#FFFFFF", paddingTop: "10px"}}>The Perfect Poolside Rock Design</h2>
           <Gallery photos={this.props.data.rock_photos.slice(0, 6)} />
           <Link to="/rockgallery"> 
-            <div id="contactForm">
-              <button className="submit" style={{backgroundColor: 'rgba(52, 52, 52, 0.0)', color: '#fe6928'}}>See More <FontAwesomeIcon icon={faArrowRight} /></button> 
+            <div>
+              <button style={{backgroundColor: 'rgba(52, 52, 52, 0.0)', color: '#fe6928', margin: "0px"}}>See More <FontAwesomeIcon icon={faArrowRight} /></button> 
             </div>
           </Link>
         </section>
